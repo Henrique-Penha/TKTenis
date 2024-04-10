@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
+import { Container } from "@/styles/util";
+
 import Car from "../../../public/carrinho.png";
 import Logo from "../../../public/TK-logo.jpg";
 
@@ -46,8 +48,7 @@ const Header = () => {
 }
 
 const StyledHeader = styled.header`
-    width: 100vw;
-    padding: 30px 60px;
+    ${Container};
     background-color: black;
     color: white;
     border-bottom: solid blue;
