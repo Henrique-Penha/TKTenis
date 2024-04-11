@@ -24,7 +24,7 @@ const Info = () => {
 
 const StyledSec = styled.section`
     ${Container};
-    background-color: #CCC;
+    background-color: gray;
 `;
 
 const StyledColum = styled.div`

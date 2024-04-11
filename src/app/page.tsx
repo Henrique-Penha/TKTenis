@@ -3,6 +3,7 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero";
 import Info from "./components/Info";
+import Galery from "./components/Galery";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Info />
+      <Galery />
     </main>
   );
 }
