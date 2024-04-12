@@ -1,13 +1,14 @@
+"use client";
+
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from "./lib/registry";
 
-const mont = Montserrat({ weight: '700', subsets: ["latin"] });
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-export const metadata: Metadata = {
-  title: "TKTenis",
-};
+const mont = Montserrat({ weight: '700', subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -17,7 +18,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={mont.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Header />
+            {children}
+          <Footer />
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
