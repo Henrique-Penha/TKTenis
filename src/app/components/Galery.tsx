@@ -9,6 +9,7 @@ import NikeW from "../../../public/Nike-white.jpg";
 import Gold from "../../../public/tenis-five.jpg";
 
 import { Container } from "@/styles/util";
+import Link from "next/link";
 
 const Galery = () => {
     return(
@@ -26,7 +27,9 @@ const Galery = () => {
                 <Image src={Nuxt} width={250} height={275} alt="" />
             </StyledColums>
                 
-            <StyledButton type="button">Veja Aqui !!!</StyledButton>
+            <StyledButton type="button">
+                <Link href="">Veja Aqui !!!</Link>
+            </StyledButton>
         </StyledSec>
     )
 }
