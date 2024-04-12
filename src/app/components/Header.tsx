@@ -26,7 +26,7 @@ const Header = () => {
                             </Link>
                         </StyledItems>
                         <StyledItems>
-                            <Link href="">
+                            <Link href="/about">
                                 Sobre
                             </Link>
                         </StyledItems>
