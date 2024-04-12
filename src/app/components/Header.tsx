@@ -16,7 +16,7 @@ const Header = () => {
                 <StyledNavbar>
                     <StyledLogo>
                         <Link href="/">
-                            <Image src={Logo} width={100} height={100} alt="Carrinho" />
+                            <Image src={Logo} width={100} height={100} alt="Logo" />
                         </Link>
                     </StyledLogo>
                     <StyledMenu>
