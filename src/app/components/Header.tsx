@@ -36,6 +36,11 @@ const Header = () => {
                             </Link>
                         </StyledItems>
                         <StyledItems>
+                            <Link href="/login">
+                                Login
+                            </Link>
+                        </StyledItems>
+                        <StyledItems>
                             <Link href="">
                                 <Image src={Car} width={50} height={50} alt="Carrinho" />
                             </Link>
