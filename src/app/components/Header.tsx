@@ -31,7 +31,7 @@ const Header = () => {
                             </Link>
                         </StyledItems>
                         <StyledItems>
-                            <Link href="">
+                            <Link href="/product">
                                 Produtos
                             </Link>
                         </StyledItems>
