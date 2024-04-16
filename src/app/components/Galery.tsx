@@ -28,7 +28,7 @@ const Galery = () => {
             </StyledColums>
                 
             <StyledButton type="button">
-                <Link href="">Veja Aqui !!!</Link>
+                <Link href="/product">Compre o seu !!!</Link>
             </StyledButton>
         </StyledSec>
     )
