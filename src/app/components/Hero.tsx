@@ -20,7 +20,7 @@ const Hero = () => {
                             <br/>Aproveite as ofertas super imperdiveis !!!
                         </StyledText>
                         <StyledButton type="button">
-                            <Link href="/product">Veja Aqui</Link>
+                            <Link href="/list">Veja Aqui</Link>
                         </StyledButton>
                     </StyledCard>
                 </StyledPos>      

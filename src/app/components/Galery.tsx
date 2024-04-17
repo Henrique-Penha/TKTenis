@@ -26,10 +26,12 @@ const Galery = () => {
                 <Image src={Nik} width={250} height={275} alt="" />
                 <Image src={Nuxt} width={250} height={275} alt="" />
             </StyledColums>
-                
-            <StyledButton type="button">
-                <Link href="/product">Compre o seu !!!</Link>
-            </StyledButton>
+            
+            <Link href="/list">
+                <StyledButton type="button">
+                    Compre o seu !!!
+                </StyledButton>
+            </Link>
         </StyledSec>
     )
 }
