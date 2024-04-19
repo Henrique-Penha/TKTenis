@@ -9,6 +9,9 @@ import { Container } from "@/styles/util";
 import Jordan from "../../../public/tenis-four.jpg";
 
 const Product = () => {
+
+    
+
     return(
         <StyledSec>
             <StyledColumns>
@@ -19,7 +22,7 @@ const Product = () => {
                     <StyledPrice>Valor: R$2.000,00</StyledPrice>
                     <StyledFormat>10x de 200 sem juros</StyledFormat>
                     
-                    <Link href="">
+                    <Link href="/shopping-cart">
                         <StyledButton>Adicinar no Carrinho</StyledButton>
                     </Link>
                 </StyledCard>

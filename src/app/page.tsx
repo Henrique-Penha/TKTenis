@@ -4,7 +4,8 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Galery from "./components/Galery";
 
-export default function Home() {
+export default async function Home() {
+
   return (
     <main>
       <Hero />

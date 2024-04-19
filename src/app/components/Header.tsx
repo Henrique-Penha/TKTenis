@@ -41,7 +41,7 @@ const Header = () => {
                             </Link>
                         </StyledItems>
                         <StyledItems>
-                            <Link href="">
+                            <Link href="/shopping-cart">
                                 <Image src={Car} width={50} height={50} alt="Carrinho" />
                             </Link>
                         </StyledItems>
