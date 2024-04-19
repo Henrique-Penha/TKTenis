@@ -11,7 +11,23 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-const Product = () => {
+
+async function getProducts() {
+    const res = await fetch('');
+    if(!res.ok) {
+        throw new Error('Failed to fetch data');
+    }
+    const productsData: any[] = await res.json();
+    productsData.forEach(product => {
+        product.image = ``;
+        product.formattedPrice = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price);
+    })
+    console.log(productsData);
+    return productsData;
+}
+
+export default async function Product() {
+    const data = await getProducts()
 
     return(
         <StyledContainer>
@@ -82,6 +98,7 @@ const StyledSearch = styled.input`
 
 const StyledButton = styled(FontAwesomeIcon)`
     position: absolute;
+    height: 15px;
     top: 250px;
     right: 465px;
     color: black;
@@ -94,13 +111,6 @@ const StyledColums = styled.div`
     justify-items: center;
     padding: 50px;
     gap: 30px;
-
-    transition: 0.5s all ease;
-
-    :hover {
-        box-shadow: 5px 0px 10px pink;
-        transform: scale(1.1);
-    }
     
 `;
 
@@ -113,15 +123,18 @@ const StyledCard = styled.div`
     color: black;
     border-radius: 10%;
     padding: 20px;
+    box-shadow: 5px 0px 10px pink;
+    
+    &:hover {
+        box-shadow: 5px 10px 10px pink;
+        transform: scale(1.1);
+        color: blue;
+    }
     
 `;
 
 const StyledLink = styled(Link)`
-
-    :hover {
-        box-shadow: 5px 0px 10px pink;
-        transform: scale(1.1);
-    }
+   
 `;
 
 const StyledImage = styled(Image)`
@@ -160,5 +173,3 @@ const StyledBuy = styled.button`
         border-color: blue;
     }
 `;
-
-export default Product;
