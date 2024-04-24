@@ -1,5 +1,7 @@
 'use client';
 
+import 'dotenv/config';
+
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Galery from "./components/Galery";
